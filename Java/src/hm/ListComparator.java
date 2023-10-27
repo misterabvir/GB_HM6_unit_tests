@@ -9,7 +9,10 @@ import java.util.List;
 public class ListComparator {
     // Constants for error messages and result descriptions
     static final String ZERO_EXCEPTION_MESSAGE = "Cannot calculate the average of an empty list";
+<<<<<<< HEAD
     static final String NULL_REFERENCE_EXCEPTION_MESSAGE = "Cannot calculate the average of null";
+=======
+>>>>>>> dc5a0198b2dd8aa7c46f1431e8d4ab98893b3f6e
     static final String FIRST_LIST_AVG_HIGHER = "The first list has a higher average value";
     static final String SECOND_LIST_AVG_HIGHER = "The second list has a higher average value";
     static final String LIST_ARE_EQUAL = "The average values are equal";
@@ -36,6 +39,7 @@ public class ListComparator {
      * @throws ArithmeticException If the input list is empty, it throws an exception with an error message.
      */
     private double calculateAverage(List<Integer> data) {
+<<<<<<< HEAD
         if (data == null) {
             throw new NullPointerException(NULL_REFERENCE_EXCEPTION_MESSAGE);
         }
@@ -44,6 +48,13 @@ public class ListComparator {
         }
         double sum = data.stream().mapToInt(Integer::intValue).sum();
         double length = data.size();
+=======
+        double sum = data.stream().mapToInt(Integer::intValue).sum();
+        double length = data.size();
+        if (length == 0) {
+            throw new ArithmeticException(ZERO_EXCEPTION_MESSAGE);
+        }
+>>>>>>> dc5a0198b2dd8aa7c46f1431e8d4ab98893b3f6e
         return sum / length;
     }
 

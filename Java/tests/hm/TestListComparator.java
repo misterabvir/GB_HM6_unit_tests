@@ -13,7 +13,12 @@ class TestListComparator {
     private ListComparator comparator;
 
     /**
+<<<<<<< HEAD
      * Test case for comparing empty lists and expecting an ArithmeticException with a specific message.
+=======
+     * Test case for comparing empty lists and
+     * expecting an ArithmeticException with a specific message.
+>>>>>>> dc5a0198b2dd8aa7c46f1431e8d4ab98893b3f6e
      */
     @Test
     void testNegativeEmptyList() {
@@ -36,6 +41,7 @@ class TestListComparator {
     }
 
     /**
+<<<<<<< HEAD
      * Test case for comparing nullable list and
      * expecting an NullPointerException with a specific message.
      */
@@ -59,6 +65,10 @@ class TestListComparator {
 
     /**
      * Test case for comparing lists where the average of the first list is higher than the second list.
+=======
+     * Test case for comparing lists
+     * where the average of the first list is higher than the second list.
+>>>>>>> dc5a0198b2dd8aa7c46f1431e8d4ab98893b3f6e
      */
     @Test
     void testPositiveFirstListAverageHigherThanSecond() {
