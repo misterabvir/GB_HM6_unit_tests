@@ -22,11 +22,7 @@
 
 ### Тест `testPositiveEqualListAverages`
 
-<<<<<<< HEAD
 Этот тест проверяет метод `compareAverages` в случае, когда среднее значение второго списка выше, чем среднее значение первого списка. Ожидается, что метод вернет строку "The second list has a higher average value".
-=======
-Этот тест проверяет метод `compare_averages` в случае, когда среднее значение второго списка выше, чем среднее значение первого списка. Ожидается, что метод вернет строку "The second list has a higher average value".
->>>>>>> dc5a0198b2dd8aa7c46f1431e8d4ab98893b3f6e
 
 ## Покрытие тестами
 ![coverage](./images/report.png)
