@@ -5,12 +5,15 @@ import pytest
 from src.list_comparator import ListComparator
 
 
-def test_negative_list_lengths():
+def test_compare_averages_with_empty_lists():
     """
     Test when one or both lists have a length of zero.
     """
     with pytest.raises(ZeroDivisionError):
         ListComparator([], [1, 2, 3]).compare_averages()
+
+    with pytest.raises(ZeroDivisionError):
+        ListComparator([1, 2, 3], []).compare_averages()
 
     with pytest.raises(ZeroDivisionError):
         ListComparator([], []).compare_averages()
@@ -25,14 +28,6 @@ def test_non_numeric_elements():
 
     with pytest.raises(TypeError):
         ListComparator([1, 2, 'three'], [4, 5, 'six']).compare_averages()
-
-
-def test_compare_averages_with_empty_lists():
-    """
-    Test the compare_averages method with empty lists.
-    """
-    with pytest.raises(ZeroDivisionError):
-        ListComparator([], []).compare_averages()
 
 
 def test_compare_averages_with_equal_averages():
