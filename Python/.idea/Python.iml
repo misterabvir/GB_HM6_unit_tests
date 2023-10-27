@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
+    <option name="myDocStringFormat" value="Plain" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/tests" />
+      </list>
+    </option>
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="66931cb7-0e7b-4b52-8b1c-9425402e28e5" />
+  </component>
+</module>
